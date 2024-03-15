@@ -1,0 +1,149 @@
+:root {
+    --fontirs: irs;
+    --fontbahman: bahman;
+    --fontlale: lale;
+    --fontaviny: aviny;
+    --color1: #04AA6D;
+    --color2: #6528e0;
+    --color3: rgb(7 112 112);
+    --color4: rgb(23, 240, 23);
+    --color5: #0c0025;
+    --color6: rgb(1, 1, 54);
+    --color7: #171615;
+    --color8: #1D1615;
+    --color9: #20211A;
+    --color10: #141514;
+    --color11: #0F0616;
+    --color12: #292827;
+    --bg-light: #eee;
+    --bg-dark: #444;
+}
+body{
+    background-color: var(--bg-dark);
+   transition: background-color .5s;
+}
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf)
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+.dark-body {
+    background-color: var(--bg-dark);
+}
+
+.light-body {
+    background-color: var(--bg-light);
+}
+
+.theme-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 56%;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 3px 3px 2px 3px rgba(0, 0, 0, 0.7);
+    background-color: #cccccc;
+}
+.theme-button .dark-button{
+    background-color: rgb(0,0,0);
+}
+
+.theme-button:not(.dark-button) .moon-icon{
+    display: none;
+}
+.theme-button.dark-button .sun-icon{
+    display: none;
+}
+/* .menu-color{
+    color: black;
+} */
+/* mfd  */
+
+@media (min-width:300px){
+.spanchange{
+    color: white;
+    margin-top: -20%;
+}  
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color5);
+    background-color:  var(--color5);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: var(--fontirs);
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  .span-color{
+    color: rgb(0, 0, 0);
+  }
+  .personal-icon{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .user-icon-index{
+    width: 10%;
+    background-color: var(--color11);
+    border-radius: 56%;
+  }
+}

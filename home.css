@@ -15,6 +15,9 @@
   --color10: #141514;
   --color11: #0F0616;
   --color12: #292827;
+  --color13 : rgb(13 16 25);
+  --bg-light : #eee;;
+  --bg-dark : #444;
 }
 
 @font-face {

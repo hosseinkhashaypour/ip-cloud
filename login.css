@@ -1,0 +1,128 @@
+:root {
+    --fontirs: irs;
+    --fontbahman: bahman;
+    --fontlale: lale;
+    --fontaviny: aviny;
+    --color1: #04AA6D;
+    --color2: #6528e0;
+    --color3: rgb(7 112 112);
+    --color4: rgb(23, 240, 23);
+    --color5: #0c0025;
+    --color6: rgb(1, 1, 54);
+    --color7: #171615;
+    --color8: #1D1615;
+    --color9: #20211A;
+    --color10: #141514;
+    --color11: #0F0616;
+    --color12: #292827;
+    --bg-light : #eee;;
+    --bg-dark : #444;
+  }
+  
+  @font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf)
+  }
+  
+  @font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+  }
+  
+  @font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+  }
+  
+  body {
+    background: var(--bg-light);
+    color: black;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* margin: 0 auto; */
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontlale);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+.dark-body{
+    background-color: var(--bg-dark);
+}
+.light-body{
+    background-color: var(--bg-light);
+}
+.border-color{
+    background-color: black;
+}
+.theme-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 56%;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.7);
+}
+@media (min-width:300px){
+    .theme-button .dark-button{
+        background-color: rgb(0,0,0);
+    }
+    .theme-button:not(.dark-button) .moon-icon{
+        display: none;
+    }
+    .theme-button.dark-button .sun-icon{
+        display: none;
+    }
+    
+    #form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 3px solid white;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 10px 20px 10px #cccccc;
+        border-width: 100px;
+    }
+    #form input{
+        padding: 8px 16px;
+        border-radius: 20px;
+        width: 100%;
+    }
+    .btn1{
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+    }
+}
+
+/* ADD */
+@media(min-width:401px){
+  #form input{
+    width: 50%;
+  }
+}
